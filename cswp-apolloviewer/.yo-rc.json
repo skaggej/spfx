@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "cswp-apolloviewer",
+    "libraryId": "149e9c45-c133-4184-a4de-3f838d6eaf2e",
+    "environment": "spo"
+  }
+}
