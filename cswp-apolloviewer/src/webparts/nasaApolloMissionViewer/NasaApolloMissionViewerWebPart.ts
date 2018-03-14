@@ -70,15 +70,18 @@ export default class NasaApolloMissionViewerWebPart extends BaseClientSideWebPar
           header: {
             description: strings.PropertyPaneDescription
           },
+          displayGroupsAsAccordion: true,
           groups: [
             {
               groupName: strings.BasicGroupName,
+              isCollapsed: true,
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
                 }),
                 PropertyPaneTextField('selectedMission', <IPropertyPaneTextFieldProps> {
-                  label: "Apollo Mission to Show"
+                  label: "Apollo Mission to Show",
+                  onGetErrorMessage: this._validateMissionCode.bind(this)
                 })
               ]
             }
@@ -86,6 +89,13 @@ export default class NasaApolloMissionViewerWebPart extends BaseClientSideWebPar
         }
       ]
     };
+  }
+
+  private _validateMissionCode(value: string): string{
+    const validMissionCodeRegEx = /AS-[2,5][0,1][0-9]/g
+    return value.match(validMissionCodeRegEx)
+    ? ''
+    : 'Invalid mission code. Format is \AS-###\'.';
   }
 
   protected get disableReactivePropertyChanges(): boolean {
