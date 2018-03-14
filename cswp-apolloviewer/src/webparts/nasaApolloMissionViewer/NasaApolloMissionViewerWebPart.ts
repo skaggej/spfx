@@ -88,6 +88,19 @@ export default class NasaApolloMissionViewerWebPart extends BaseClientSideWebPar
     };
   }
 
+  protected get disableReactivePropertyChanges(): boolean {
+    return true;
+  }
+
+  protected onAfterPropertyPaneChangesApplied(): void{
+    this.selectedMission = this._getSelectedMission();
+    if(this.selectedMission){
+      this._renderMissionDetails(this.missionDetailElement,this.selectedMission);
+    } else {
+      this.missionDetailElement.innerHTML = '';
+    }
+  }
+
   private _getSelectedMission(): IMission {
     const selectedMissionId: string = (this.properties.selectedMission)
     ? this.properties.selectedMission
