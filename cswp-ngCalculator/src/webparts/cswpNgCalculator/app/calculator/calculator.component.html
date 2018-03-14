@@ -1,0 +1,10 @@
+<uif-textfield id="operandA" uif-description="Must be a number" ng-model="vm.operandA" ng-change="vm.calculate()"></uif-textfield>
+<uif-dropdown ng-model="vm.operator" ng-change="vm.calculate()">
+  <uif-dropdown-option value="+">+</uif-dropdown-option>
+  <uif-dropdown-option value="-">-</uif-dropdown-option>
+  <uif-dropdown-option value="*">*</uif-dropdown-option>
+  <uif-dropdown-option value="/">/</uif-dropdown-option>
+</uif-dropdown>
+<uif-textfield id="operandB" uif-description="Must be a number" ng-model="vm.operandB" ng-change="vm.calculate()"></uif-textfield>
+<uif-label><strong>Result</strong>: {{vm.result}}</uif-label>
+<div style="color:red;">{{vm.errors}}</div>

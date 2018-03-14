@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cswp-ng-calculator-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cswpNgCalculator/CswpNgCalculatorWebPart.js",
+          "manifest": "./src/webparts/cswpNgCalculator/CswpNgCalculatorWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CswpNgCalculatorWebPartStrings": "lib/webparts/cswpNgCalculator/loc/{locale}.js"
+  }
+}

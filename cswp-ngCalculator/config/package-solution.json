@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cswp-ng-calculator-client-side-solution",
+    "id": "80608bf7-088d-4945-81b7-d4db743fa12b",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": false
+  },
+  "paths": {
+    "zippedPackage": "solution/cswp-ng-calculator.sppkg"
+  }
+}

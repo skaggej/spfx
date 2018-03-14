@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.2.0",
+    "libraryName": "cswp-ng-calculator",
+    "libraryId": "80608bf7-088d-4945-81b7-d4db743fa12b",
+    "environment": "spo"
+  }
+}
