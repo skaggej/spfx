@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "git-hub-web-part-client-side-solution",
+    "id": "d81f6f9d-b708-49e7-b65d-c86818556078",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/git-hub-web-part.sppkg"
+  }
+}
