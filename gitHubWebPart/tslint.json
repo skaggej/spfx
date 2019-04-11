@@ -11,7 +11,7 @@
     "no-construct": false,
     "no-duplicate-variable": true,
     "no-eval": false,
-    "no-function-expression": true,
+    "no-function-expression": false,
     "no-internal-module": true,
     "no-shadowed-variable": true,
     "no-switch-case-fall-through": true,
