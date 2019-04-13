@@ -1,4 +1,4 @@
-## git-hub-web-part
+## git-hub-badge-web-part
 
 This is where you include your WebPart documentation.
 

@@ -1,11 +1,21 @@
 {
+  "@pnp/generator-spfx": {
+    "framework": "none",
+    "pnpFramework": "none.plus",
+    "pnp-libraries": [],
+    "pnp-ci": [],
+    "pnp-vetting": [],
+    "spfxenv": "spo"
+  },
   "@microsoft/generator-sharepoint": {
-    "version": "1.7.1",
-    "libraryName": "git-hub-web-part",
-    "libraryId": "d81f6f9d-b708-49e7-b65d-c86818556078",
     "environment": "spo",
-    "packageManager": "npm",
+    "framework": "none",
     "isCreatingSolution": true,
+    "version": "1.8.0",
+    "libraryName": "git-hub-badge-web-part",
+    "libraryId": "d40be93e-575e-419a-a56a-05067c51bfae",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
     "componentType": "webpart"
   }
 }

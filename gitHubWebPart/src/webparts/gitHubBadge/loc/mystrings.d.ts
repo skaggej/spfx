@@ -5,7 +5,7 @@ declare interface IGitHubBadgeWebPartStrings {
   GitHubUserNameFieldLabel: string;
 }
 
-declare module "GitHubBadgeWebPartStrings" {
+declare module 'GitHubBadgeWebPartStrings' {
   const strings: IGitHubBadgeWebPartStrings;
   export = strings;
 }

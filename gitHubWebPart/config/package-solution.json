@@ -1,12 +1,14 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "git-hub-web-part-client-side-solution",
-    "id": "d81f6f9d-b708-49e7-b65d-c86818556078",
+    "name": "git-hub-badge-web-part-client-side-solution",
+    "id": "d40be93e-575e-419a-a56a-05067c51bfae",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
   },
   "paths": {
-    "zippedPackage": "solution/git-hub-web-part.sppkg"
+    "zippedPackage": "solution/git-hub-badge-web-part.sppkg"
   }
 }
